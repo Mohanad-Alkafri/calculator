@@ -17,6 +17,7 @@ const show = document.querySelector('.show')
 const erase = document.querySelector('.C')
 const p = document.querySelector('p')
 const btn = document.querySelectorAll('button')
+const btnCon = document.querySelector('.btncontainer')
 
 
 const add = function(n1, n2) {return n1+n2 }
@@ -57,7 +58,15 @@ const dic = function (n){
 }
 
 
-
+btnCon.addEventListener('click' , e => {
+    if( hasError == true && e.target != equal){
+        n1 = ''
+        n2 = ''
+        op = ''
+        p.style.color = 'black'
+        show.textContent = ''
+        hasError = false
+}})
 zero.addEventListener('click', e => {
     if(op == '') n1 = n1+'0'
     else n2 = n2 + '0'
@@ -125,9 +134,9 @@ erase.addEventListener('click', e => {
 equal.addEventListener('click', e => {
     let result = 0
     if(n2 == 0 && op == '/'){
-        p.style.color = 'red'
         hasError = true
         show.textContent = 'ERROR: DEVIDING BY 0.'
+        p.style.color = 'red'
 
     }
     else if(n2 != '' && n1 != ''){
