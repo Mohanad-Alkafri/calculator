@@ -11,11 +11,13 @@ body{
     background-color: pink;
     width: 375px;
     justify-content: center;
+    border-radius: 18px;
+    padding: 20px 0;
 }
 
 .btncontainer{
     display: flex;
-    border-top: 1px solid black;
+    border-top: 2px solid black;
     flex-wrap: wrap;
     flex: 0 1;
     width: 359px;
@@ -23,15 +25,19 @@ body{
     justify-content: center;
     align-content: center;
     padding: 7px;
+    border-radius: 18px;
+
 }
 
 button{
-    background-color:antiquewhite;
+    background-color:whitesmoke ;
+    color:grey ;
     height: 60px;
     width: 70px;
     cursor: pointer;
     font-size: larger;
     font-weight:bolder;
+    border-radius: 8px;
 }
 
 .screen{
@@ -41,8 +47,47 @@ button{
     width: 300px;
     margin: 5px;
     align-self: center;
+    border-radius: 18px;
+    padding: 0 10px;
+
 }
 
-.operation{
+.op{
     color: blue;
 }
+
+p{
+    font-size:50px;
+    font-family: "Momo Signature", cursive;
+    margin: 10px;
+}
+
+.backslash{
+    font-size: xx-large;
+    font-weight: bolder;
+    align-content: center;
+}
+
+.decimal{
+    font-size: xx-large;
+    font-weight: bolder;
+    align-content: center;
+}
+
+.zero{
+    flex-grow: 1;
+}
+
+.equal{
+    flex-grow: 1;
+    background-color: aquamarine;
+}
+
+.number{
+    background-color: lightblue;
+}
+
+.C{
+    color: red;
+}
+
