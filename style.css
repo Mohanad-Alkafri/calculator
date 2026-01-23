@@ -42,3 +42,7 @@ button{
     margin: 5px;
     align-self: center;
 }
+
+.operation{
+    color: blue;
+}
